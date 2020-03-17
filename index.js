@@ -113,11 +113,14 @@ Baby.prototype.play = function() {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. When you use this in the global scope, this refers to object in the global
-  scope
-  2. 
-  3. 
-  4. 
+  1. Global: When you use this in the global scope, this refers to object in the 
+  global scope
+  2. Implicit: When using this, what's to the left of the dot is that this is
+  referring to.
+  3. New Binding: When creating new object, this refers to what is returned when
+  new [obj] is called.
+  4. Explicit: This is explicitly defined and refers to what is passed rather
+  than what's before the dot.
 */
 
 
