@@ -45,16 +45,16 @@ function Person(name, age) {
   this.stomach = [];
 }
 
-Person.prototype.eat = function() {
-  if(this.stomach < 10) {
-    this.eat.push(food);
+Person.prototype.eat = function(someFood) {
+  if(this.stomach.length == 10) {
+    return;
   }
+  this.stomach.push(someFood);
+  
 }
 
 Person.prototype.poop = function() {
-  if(this.stomach == 0) {
     this.stomach = [];
-  }
 }
 
 Person.prototype.toString = function(){
@@ -113,7 +113,8 @@ Baby.prototype.play = function() {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
+  1. When you use this in the global scope, this refers to object in the global
+  scope
   2. 
   3. 
   4. 
